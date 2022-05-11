@@ -1,0 +1,32 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+</div>
+
+<h1>Upload File</h1>
+<br />
+<div class="row">
+    <div class="col-md-5">
+        <form class="col-xs-12" method="post" enctype="multipart/form-data" asp-controller="Home" asp-action="Index">
+            <div class="form-group">
+                <div class="col-md-10">
+                    <input class="form-control" name="files" type="file"/>
+                </div>
+            </div>
+            <br />
+            <div class="row mt-2">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <input type="submit" value="Upload" class="btn btn-primary w-100" />
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <a asp-controller="Home" asp-action="Index" class="btn btn-secondary  w-100">Back</a>
+                    </div>
+            </div>
+        </form>
+    </div>
+</div> 
