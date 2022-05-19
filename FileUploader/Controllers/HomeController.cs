@@ -39,7 +39,7 @@ namespace FileUploader.Controllers
                     HttpClient httpClient = new HttpClient();
 
                     // Create the container and return a container client object
-                    BlobContainerClient containerClient = _blobServiceClient.GetBlobContainerClient("test");
+                    BlobContainerClient containerClient = _blobServiceClient.GetBlobContainerClient("demo");
                     await containerClient.CreateIfNotExistsAsync();
 
                     // Get a reference to a blob
